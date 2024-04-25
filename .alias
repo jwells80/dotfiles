@@ -1,0 +1,29 @@
+# Nala aliases
+alias snala="sudo nala"
+
+# ls aliases uses exa instead of ls
+alias ls="exa -ag --group-directories-first --icons"
+alias la="exa -alh --group-directories-first --icons"
+
+# Git aliases
+alias check="git ls-files -v|grep '^S'"
+skip() {  git update-index --skip-worktree "$@";  git status; }
+unskip() {  git update-index --no-skip-worktree "$@";  git status; }
+
+# Docker aliases
+alias dcu="docker-compose up"
+alias dcud="docker-compose up -d"
+alias dcs="docker-compose stop"
+alias dcd="docker-compose down"
+alias dcufr="docker-compose up --force-recreate"
+alias dcudfr="docker-compose up -d --force-recreate"
+dexbash() { docker exec -it "$@" bash; }
+dlog() { docker logs -f "$@";}
+
+# alias to replace cat with bat
+alias cat="batcat"
+
+# various aliases
+alias icat="kitty +kitten icat"
+alias vim="nvim"
+alias s="kitty +kitten ssh"
