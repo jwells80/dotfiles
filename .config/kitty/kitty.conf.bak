@@ -568,7 +568,8 @@ enabled_layouts Tall, Stack, Grid
 #: this option. Using a value of center means the cell area will be
 #: placed centrally. A value of top-left means the padding will be on
 #: only the bottom and right edges.
-# active_border_color #005f00
+
+active_border_color #005f00
 
 #: The color for the border of the active window. Set this to none to
 #: not draw borders around the active window.
@@ -713,15 +714,17 @@ tab_title_template "{index}: {title}"
 
 #: Template to use for active tabs, if not specified falls back to
 #: tab_title_template.
-# active_tab_foreground   #fff
-# active_tab_background   #005f00
+
+active_tab_foreground   #fff
+active_tab_background   #005f00
 active_tab_font_style   bold-italic
-# inactive_tab_foreground #bbb
-# inactive_tab_background #5f0000
+inactive_tab_foreground #bbb
+inactive_tab_background #5f0000
 inactive_tab_font_style normal
 
 #: Tab bar colors and styles
-# tab_bar_background #222
+
+tab_bar_background #222
 
 #: Background color for the tab bar. Defaults to using the terminal
 #: background color.
@@ -1465,9 +1468,3 @@ inactive_tab_font_style normal
 #: }}}
 
 #: }}}
-
-
-# BEGIN_KITTY_THEME
-# Vibrant Ink
-include current-theme.conf
-# END_KITTY_THEME

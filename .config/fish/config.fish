@@ -43,13 +43,14 @@ if status is-interactive
   set -x PAGER "bat"
   set -x VISUAL "nvim"
   set -x EDITOR "nvim"
-  set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
-  # set -x MANPAGER "most"
+  # set -x MANPAGER "sh -c 'col -bx | batcat -l man -p'"
+  set -x MANPAGER "most"
   source ~/.alias.fish
 end
 load_nvm > /dev/null
 pyenv init - | source
 
+zoxide init fish | source
 # bun
 set --export BUN_INSTALL "$HOME/.local/share/reflex/bun"
 set --export PATH $BUN_INSTALL/bin $PATH

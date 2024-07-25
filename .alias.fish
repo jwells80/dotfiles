@@ -81,6 +81,9 @@ alias vim "nvim"
 alias nr "npm run"
 alias ni "npm install"
 alias nrb "npm run build"
+alias nrwc "npm run postcss-watch:crossbreed"
+alias nrwn "npm run postcss-watch:n8"
+alias nrwd "npm run postcss-watch:dashboard"
 
 # pip 
 alias pi "pip install"

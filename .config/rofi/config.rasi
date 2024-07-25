@@ -1,5 +1,5 @@
 configuration {
-	modi: "drun,run,window,filebrowser";
+	modi: "drun,run,window,filebrowser,ssh";
 font: "Fira Code SemiBold 12";
 /*	location: 0;*/
 /*	yoffset: 0;*/
@@ -8,7 +8,7 @@ font: "Fira Code SemiBold 12";
   show-icons: true;
 	terminal: "kitty";
 /*	ssh-client: "ssh";*/
-/*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
+	ssh-command: "{terminal} -e kitty +kitten ssh {host} [-p {port}]";
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
 /*	run-shell-command: "{terminal} -e {cmd}";*/
@@ -60,9 +60,10 @@ font: "Fira Code SemiBold 12";
 	display-run:                "";
     display-filebrowser:        "";
     display-window:             "󱂬";
+    display-ssh:              "ssh";
    
   /* "Command";*/
-  /* display-ssh: "Connect SSH"; */
+
 /*	display-drun: "Applications"; */
 /*	display-combi: ;*/
 /*  display-keys: "Files"; */
